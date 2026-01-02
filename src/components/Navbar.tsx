@@ -29,12 +29,10 @@ export const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold text-xl">
-            P
-          </div>
+        <div className="flex items-center gap-3">
+          <img src="/images/logo.jpg" alt="SAMBALU BENUR Logo" className="w-12 h-12 rounded-lg object-cover border border-white/20 shadow-sm" />
           <span className={`font-bold text-xl tracking-tight ${isScrolled ? 'text-primary' : 'text-white drop-shadow-md'}`}>
-            Pangkep<span className="text-secondary">AquaSeed</span>
+            SAMBALU <span className="text-secondary">BENUR</span>
           </span>
         </div>
 
@@ -51,7 +49,7 @@ export const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <Button variant="accent" size="sm" onClick={() => window.open('https://wa.me/6285242874466?text=Halo%20Pangkep%20AquaSeed,%20saya%20ingin%20tanya%20stok%20bibit', '_blank')}>
+          <Button variant="accent" size="sm" onClick={() => window.open('https://wa.me/6285242874466?text=Halo%20SAMBALU%20BENUR,%20saya%20ingin%20tanya%20stok%20bibit', '_blank')}>
             <Phone size={16} /> Hubungi Kami
           </Button>
         </div>
@@ -71,7 +69,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white border-b border-slate-100 p-4 md:hidden flex flex-col gap-4 shadow-xl">
+        <div className="absolute top-full left-0 right-0 bg-white border-b border-slate-100 p-4 md:hidden flex flex-col gap-4 shadow-xl z-50">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -82,7 +80,7 @@ export const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <Button fullWidth variant="accent" onClick={() => window.open('https://wa.me/6285242874466?text=Halo%20Pangkep%20AquaSeed,%20saya%20ingin%20tanya%20stok%20bibit', '_blank')}>
+          <Button fullWidth variant="accent" onClick={() => window.open('https://wa.me/6285242874466?text=Halo%20SAMBALU%20BENUR,%20saya%20ingin%20tanya%20stok%20bibit', '_blank')}>
             Hubungi Lewat WhatsApp
           </Button>
         </div>

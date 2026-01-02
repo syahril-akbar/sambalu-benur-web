@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# 🦐 SAMBALU BENUR - Official Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Banner](./public/images/landing-page.png)
 
-Currently, two official plugins are available:
+**SAMBALU BENUR** adalah landing page modern untuk usaha distribusi bibit udang (Benur) dan ikan (Nener) yang berlokasi di Pangkep, Sulawesi Selatan. Website ini dirancang untuk kecepatan, kemudahan akses mobile, dan konversi tinggi ke WhatsApp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Fitur Utama
 
-## React Compiler
+- **⚡ High Performance:** Dibangun dengan React + Vite untuk loading super cepat.
+- **📱 Mobile First:** Desain responsif yang optimal untuk layar HP petani/petambak.
+- **🎨 Modern UI/UX:** Menggunakan Tailwind CSS dengan sentuhan *Glassmorphism* dan animasi halus.
+- **📍 Integrasi Peta:** Embed Google Maps akurat ke lokasi hatchery.
+- **💬 Direct WhatsApp:** Tombol CTA yang langsung membuka chat dengan pesan pre-filled.
+- **🌊 Katalog Produk:** Showcase Benur Vaname & Nener Bandeng dengan detail spesifikasi.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Teknologi yang Digunakan
 
-## Expanding the ESLint configuration
+- **Framework:** [React 18](https://reactjs.org/) (TypeScript)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS v3](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Animation:** [Framer Motion](https://www.framer.com/motion/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Cara Menjalankan Project
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Ikuti langkah ini untuk menjalankan website di komputer lokal Anda:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 1. Prasyarat
+Pastikan Anda sudah menginstall [Node.js](https://nodejs.org/) (versi 18 ke atas).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. Instalasi
+Clone repository ini (atau download ZIP) dan masuk ke folder proyek:
+
+```bash
+# Install dependencies
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3. Jalankan Mode Development
+Untuk melihat website dan mengedit kode secara live:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+Buka browser dan akses `http://localhost:5173`.
+
+### 4. Build untuk Produksi
+Jika ingin mengupload ke hosting (seperti Vercel/Netlify):
+
+```bash
+npm run build
+```
+
+## 📂 Struktur Folder
+
+```
+src/
+├── components/     # Komponen UI (Navbar, Hero, ProductCard, dll)
+├── components/ui/  # Komponen dasar reusable (Button, Card)
+├── App.tsx         # Layout utama
+├── index.css       # Global styles & Tailwind directives
+└── types.ts        # Definisi tipe data TypeScript
+public/
+└── images/         # Aset gambar (Logo, Hero, Produk)
+```
+
+## 📝 Lisensi
+
+Hak Cipta © 2026 SAMBALU BENUR. All rights reserved.

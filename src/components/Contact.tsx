@@ -23,8 +23,8 @@ export const Contact = () => {
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-800">Alamat Hatchery</h4>
-                  <p className="text-slate-600">Jl. A. Makkaderen, Pangkajene, Kab. Pangkep, Sulawesi Selatan</p>
+                  <h4 className="font-bold text-slate-800">Alamat Hatchery & Perkolondongan</h4>
+                  <p className="text-slate-600">Jl. A. Makkaderen, Pitu Sunggu, Kec. Ma'rang, Kab. Pangkajene Dan Kepulauan, Sulawesi Selatan 90654</p>
                 </div>
               </div>
               
@@ -53,7 +53,7 @@ export const Contact = () => {
               <h3 className="font-bold text-lg mb-4">Kirim Pesan Cepat</h3>
               <form className="space-y-4" onSubmit={(e) => {
                 e.preventDefault();
-                window.open('https://wa.me/6285242874466?text=Halo%20Pangkep%20AquaSeed,%20saya%20ingin%20bertanya...', '_blank');
+                window.open('https://wa.me/6285242874466?text=Halo%20SAMBALU%20BENUR,%20saya%20ingin%20bertanya...', '_blank');
               }}>
                 <div className="grid grid-cols-2 gap-4">
                   <input type="text" placeholder="Nama Anda" className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" />
@@ -68,20 +68,20 @@ export const Contact = () => {
           </div>
 
           {/* Right: Map */}
-          <div className="h-[500px] rounded-2xl overflow-hidden shadow-lg bg-slate-200 relative">
+          <div className="h-[300px] lg:h-[500px] rounded-2xl overflow-hidden shadow-lg bg-slate-200 relative">
              <iframe 
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.654881261314!2d119.54876531476335!3d-4.828699996492978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbe50607149021d%3A0x6854199993355555!2sPangkajene%2C%20Pangkajene%20dan%20Kepulauan%20Regency%2C%20South%20Sulawesi!5e0!3m2!1sen!2sid!4v1625648931234!5m2!1sen!2sid" 
+               src="https://maps.google.com/maps?q=8HH3%2BXJ%20Pitu%20Sunggu%2C%20Kabupaten%20Pangkajene%20Dan%20Kepulauan%2C%20Sulawesi%20Selatan&t=&z=15&ie=UTF8&iwloc=&output=embed"  
                width="100%" 
                height="100%" 
                style={{ border: 0 }} 
                allowFullScreen 
                loading="lazy"
                referrerPolicy="no-referrer-when-downgrade"
-               title="Lokasi Pangkep AquaSeed"
+               title="Lokasi SAMBALU BENUR - Pitu Sunggu"
              ></iframe>
              <div className="absolute bottom-4 left-4 bg-white p-3 rounded-lg shadow-md text-xs">
-               <p className="font-bold">📍 Pangkep AquaSeed</p>
-               <p>Klik 'View larger map' untuk rute</p>
+               <p className="font-bold">📍 SAMBALU BENUR</p>
+               <p>Titik: 8HH3+XJ Pitu Sunggu</p>
              </div>
           </div>
 

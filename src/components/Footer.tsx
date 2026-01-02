@@ -8,16 +8,14 @@ export const Footer = () => {
           
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold">
-                P
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/images/logo.jfif" alt="SAMBALU BENUR Logo" className="w-10 h-10 rounded-lg object-cover" />
               <span className="font-bold text-xl text-white">
-                Pangkep<span className="text-secondary">AquaSeed</span>
+                SAMBALU <span className="text-secondary">BENUR</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed mb-4 text-slate-400">
-              Solusi bibit udang dan ikan berkualitas untuk keberhasilan panen petambak Indonesia.
+              Solusi benur udang dan nener berkualitas untuk keberhasilan panen petambak Indonesia.
             </p>
             <div className="flex gap-4">
               <a href="#" className="hover:text-white transition-colors"><Facebook size={20} /></a>
@@ -62,7 +60,7 @@ export const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Pangkep AquaSeed. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SAMBALU BENUR. All rights reserved.</p>
         </div>
       </div>
     </footer>

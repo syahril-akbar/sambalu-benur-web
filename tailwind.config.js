@@ -9,8 +9,8 @@ export default {
       colors: {
         primary: {
           DEFAULT: '#075985', // Deep Ocean Blue
-          light: '#0c4a6e',
-          dark: '#082f49',
+          light: '#0ea5e9',
+          dark: '#0c4a6e',
         },
         secondary: {
           DEFAULT: '#10b981', // Fresh Emerald
@@ -26,6 +26,16 @@ export default {
       fontFamily: {
         sans: ['Inter', 'Montserrat', 'sans-serif'],
       },
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        }
+      }
     },
   },
   plugins: [],

@@ -1,7 +1,8 @@
 {
-  "name": "bibit-udang-ikan-site",
+  "name": "sambalu-benur-web",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Official Landing Page SAMBALU BENUR - Pusat Benur Vaname & Nener Bandeng Gelondongan Super di Pangkep",
   "type": "module",
   "scripts": {
     "dev": "vite",
